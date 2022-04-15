@@ -3,7 +3,7 @@ dependencies:
   - name: transformer
     version: 0.1.0
     alias: optimusprime
-#avoiding hyphen (i.e. not optimus-prime) as per https://github.com/kubernetes/helm/issues/2192
+    #avoiding hyphen (i.e. not optimus-prime) as per https://github.com/kubernetes/helm/issues/2192
     condition: optimusprime.enabled
     tags:
       - autobots

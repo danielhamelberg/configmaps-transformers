@@ -3,46 +3,46 @@
 # Declare variables to be passed into your templates.
 
 autobots:
-   mode: robot
+  mode: robot
 decepticons:
-   mode: disguised
+  mode: disguised
 
 tags:
   autobots: true
   decepticons: true
 
 optimusprime:
-   image:
-     repository: transformers/optimus-prime
-   service:
-     port: 30080
-   transformer:
-     allegiance: autobots
-     name: optimusprime
+  image:
+    repository: transformers/optimus-prime
+  service:
+    port: 30080
+  transformer:
+    allegiance: autobots
+    name: optimusprime
 
 gears:
-   image:
-     repository: transformers/gears
-   service:
-     port: 30081
-   transformer:
-     allegiance: autobots
-     name: gears
+  image:
+    repository: transformers/gears
+  service:
+    port: 30081
+  transformer:
+    allegiance: autobots
+    name: gears
 
 megatron:
-   image:
-     repository: transformers/megatron
-   service:
-     port: 30082
-   transformer:
-     allegiance: decepticons
-     name: megatron
+  image:
+    repository: transformers/megatron
+  service:
+    port: 30082
+  transformer:
+    allegiance: decepticons
+    name: megatron
 
 shockwave:
-   image:
-     repository: transformers/shockwave
-   service:
-     port: 30082
-   transformer:
-     allegiance: decepticons
-     name: shockwave
+  image:
+    repository: transformers/shockwave
+  service:
+    port: 30082
+  transformer:
+    allegiance: decepticons
+    name: shockwave

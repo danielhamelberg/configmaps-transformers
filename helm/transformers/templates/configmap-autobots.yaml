@@ -1,4 +1,4 @@
-{{ if (.Values.tags.autobots) and eq .Values.tags.autobots "true" }}
+{{ if eq   (.Values.tags.autobots) (.Values.tags.autobots) }}
 apiVersion: v1
 kind: ConfigMap
 metadata:

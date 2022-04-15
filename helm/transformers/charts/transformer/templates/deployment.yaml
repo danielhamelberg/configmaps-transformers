@@ -1,4 +1,4 @@
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ template "transformer.fullname" . }}
@@ -33,13 +33,13 @@ spec:
               containerPort: 8080
               protocol: TCP
           env:
-          - name: JAVA_OPTS
-            value: -Xmx64m -Xms64m
-          - name: TRANSFORMER_MODE
-            valueFrom:
-              configMapKeyRef:
-                name: "{{ .Release.Name }}-{{ .Values.transformer.allegiance }}-config"
-                key: transformer.mode
+            - name: JAVA_OPTS
+              value: -Xmx64m -Xms64m
+            - name: TRANSFORMER_MODE
+              valueFrom:
+                configMapKeyRef:
+                  name: "{{ .Release.Name }}-{{ .Values.transformer.allegiance }}-config"
+                  key: transformer.mode
           livenessProbe:
             httpGet:
               path: /actuator/health

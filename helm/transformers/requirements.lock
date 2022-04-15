@@ -1,0 +1,15 @@
+dependencies:
+- name: transformer
+  repository: ""
+  version: 0.1.0
+- name: transformer
+  repository: ""
+  version: 0.1.0
+- name: transformer
+  repository: ""
+  version: 0.1.0
+- name: transformer
+  repository: ""
+  version: 0.1.0
+digest: sha256:16fab5565af4d0772fdc9e6bcc0d12b2a43bbd5858356c5e40a30ea3281cdf90
+generated: "2022-04-15T21:46:36.2125743+02:00"

@@ -1,4 +1,4 @@
-{{ if (.Values.tags.decepticons) and eq .Values.tags.decepticons true }}
+{{ if eq .Values.tags.decepticons .Values.tags.decepticons }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -9,5 +9,5 @@ metadata:
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     app: {{ template "transformers.name" . }}
 data:
-  transformer.mode: {{ .Values.decepticons.mode }}
+  transformer.mode: if {{ .Values.decepticons.mode }}
 {{ end }}
